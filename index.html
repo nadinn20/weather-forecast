@@ -5,20 +5,52 @@
         <title>Meteo</title>
     </head>
     <body>
-        <div id="header">
+        <div id="header" style="background: #2f5972" width="100%">
             <a href = "index.html"><img src="images/logo.png" alt="logo" width="65px" height="55px"/></a>
-            <input type="text" name="enter city">
+            <form>
+                <p>
+                    <input id="search sity" type="text" placeholder="Назва населеного пункту, країни, регіону" name="search city"></input>
+                </p>
+                <p>
+                     <input type="submit" name="search" value="Пошук"></input>
+                </p>
+            </form>
         </div>
-        <div id="content">
-            <table width="700px" height="100"border="1px">
-                <td><a href="#"><p>Детальніше</p></a></td>
-                <td><a href="#"><p>Детальніше</p></a></td>
-                <td><a href="#"><p>Детальніше</p></a></td>
-            </table>
-            <div id="weather for week" width="700" height="200px">
+        <div id="wrapper" width="700px">
+            <div id="content" align="center">
+                <table width="700px" height="100" border="1px">
+                    <td align="right"><a href="weather forecast.html"><p>Детальніше</p></a></td>
+                    <td align="right"><a href="weather forecast.html"><p>Детальніше</p></a></td>
+                    <td align="right"><a href="weather forecast.html"><p>Детальніше</p></a></td>
+                </table>
+                <div id="weather for week">
+                    <h2 align="center">Прогноз погоди на тиждень</h2>
+                </div>
             </div>
-        </div>
-        <div id="footer" width="700px" height="150px">
+            <div id="footer">
+                <a href="#">
+            </div>
+            <div id="weather in Ukraine">
+                <h2>Погода в Україні<h2>
+                <ul>
+                    <li>Києв</li>
+                    <li>Харків</li>
+                    <li>Запоріжжя</li>
+                    <li>Одеса</li>
+                </ul>
+                 <ul>
+                    <li>Херсон</li>
+                    <li>Суми</li>
+                    <li>Вінниця</li>
+                    <li>Полтава</li>
+                </ul>
+                <ul>
+                    <li>Миколаїв</li>
+                    <li>Чернігів</li>
+                    <li>Львів</li>
+                    <li>Дніпропетровськ</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
