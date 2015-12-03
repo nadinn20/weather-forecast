@@ -3,82 +3,81 @@
     <head>
         <meta charset=UTF-8 />
         <title>Meteo</title>
+        <link href="css/weather.css" rel="stylesheet"/>
     </head>
     <body>
-        <header style="background: #2f5972">
-            <b><span style="color:#30afc2">METEO</span></b>
-            <form>
-                <p>
-                    <input id="search sity" type="text" placeholder="Назва населеного пункту, країни, регіону" name="search city" autofocus="autofocus"></input>
-                    <input type="submit" name="search" value="Пошук"></input>
-                </p>
-            </form>
-            <a href = "index.html"><img src="images/logo.png" alt="logo" width="65px" height="55px"/></a>
+        <header id="main" class="shadow">
+            <div id="meteo"><span><b>METEO</b></span></div>
+            <div id="form">
+                <form>
+                    <input type="text" class="search city" placeholder="Пошук країни, міста, населеного пункту" size="41" class="dark"></input>
+                    <input type="image" src="images/search_icon.svg" alt="search" id="search"></input>
+                    <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+                </form>
+            </div>
+                <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
         </header>
         <article>
             <section>
-                <header>
-                  <h2>Львів, Львівська обл.</h2>
-                </header>
-                <div>
-                    <a href="weather forecast.html">Детальніше</a>
+              <div class="box">
+                    <a href="weather forecast.html" class="detail">Детальніше</a>
                 </div>
-                    <a href="weather forecast.html">Детальніше</a>
-                <div>
-                    <a href="weather forecast.html">Детальніше</a>
+              <div class="box">
+                    <a href="weather forecast.html" class="detail">Детальніше</a>
                 </div>
-            </section>
-            <section id="weather for week">
-                <header>
-                  <h2>Прогноз погоди на тиждень</h2>
-                </header>
+                <div class="box">
+                    <a href="weather forecast.html" class="detail">Детальніше</a>
+                </div>
+        </section>
+        <section id="weather for week">
+            <h2 align="center"><span>Прогноз погоди на тиждень</span></h2>
+            <ul id="week">
+                <li>Понеділок</li>
+                <li>Вівторок</li>
+                <li>Середа</li>
+                <li>Четвер</li>
+                <li>П'ятниця</li>
+                <li>Субота</li>
+                <li>Неділя</li>
+            </ul>
+        </section>
+        <section id="weather in Ukraine">
+        <header>
+            <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
+        </header>
+            <div>
                 <ul>
-                    <li style="list-style: none;">Понеділок</li>
-                    <li style="list-style: none;">Вівторок</li>
-                    <li style="list-style: none;">Середа</li>
-                    <li style="list-style: none;">Четвер</li>
-                    <li style="list-style: none;">П'ятниця</li>
-                    <li style="list-style: none;">Субота</li>
-                    <li style="list-style: none;">Неділя</li>
+                    <a href="Ukraine.html"><li>Києв</li></a>
+                    <a href="Ukraine.html"><li>Харків</li></a>
+                    <a href="Ukraine.html"><li>Запоріжжя</li></a>
+                    <a href="Ukraine.html"><li>Одеса</li></a>
                 </ul>
-            </section>
-            <section id="weather in Ukraine">
-            <header>
-                  <a href="Ukraine.html"><h2>Погода в Україні</h2></a>
-            </header>
-                <div>
-                    <ul>
-                        <a href="Ukraine.html"><li style="list-style: none;">Києв</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Харків</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Запоріжжя</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Одеса</li></a>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <a href="Ukraine.html"><li style="list-style: none;">Херсон</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Суми</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Вінниця</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Полтава</li></a>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <a href="Ukraine.html"><li style="list-style: none;">Миколаїв</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Чернігів</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Львів</li></a>
-                        <a href="Ukraine.html"><li style="list-style: none;">Дніпропетровськ</li></a>
-                    </ul>
-                </div>
-            </section>
-            </article>
-            <aside>
-                    <img src="images/world.svg" width="500p" height="400px"/>
-                    <a href="world weather.html"><p>Всі інші країни</p></a>
-            </aside>
-            <footer style="background: #2f5972">
-                <img src="images/facebook-logo.png" width="25px" height="25px"/>
-                <img src="images/twitter.png" width="25px" height="25px"/>
-            </footer>
+            </div>
+            <div>
+                <ul>
+                    <a href="Ukraine.html"><li>Херсон</li></a>
+                    <a href="Ukraine.html"><li>Суми</li></a>
+                    <a href="Ukraine.html"><li>Вінниця</li></a>
+                    <a href="Ukraine.html"><li>Полтава</li></a>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <a href="Ukraine.html"><li>Миколаїв</li></a>
+                    <a href="Ukraine.html"><li>Чернігів</li></a>
+                    <a href="Ukraine.html"><li>Львів</li></a>
+                    <a href="Ukraine.html"><li>Дніпропетровськ</li></a>
+                </ul>
+            </div>
+        </section>
+        <aside>
+            <img src="images/world.svg" width="500p" height="400px"/>
+            <a href="world weather.html"><p>Всі інші країни</p></a>
+        </aside>
+        </article>
+        <footer>
+            <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
+            <img src="images/twitter.png" width="25px" height="25px" class="social"/>
+        </footer>
     </body>
 </html>
