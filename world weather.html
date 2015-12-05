@@ -4,36 +4,42 @@
         <meta charset=UTF-8 />
         <title>Meteo</title>
         <link href="css/weather.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header id="main" class="shadow">
-            <div id="meteo"><span><b>METEO</b></span></div>
-            <div id="form">
+        <header id="main" class="flex-conteiner">
+            <div class="flex">
+                <div>
+                    <span class="meteo"><b>METEO</b></span>
+                </div>
+                <div>
+                    <a href="index.html" id="cloud"><img src="images/logo .png" id="logo" alt="logo"/></a>
+                </div>
+            </div>
+            <div class="flex">
                 <form>
-                    <input type="text" class="search city" placeholder="Пошук країни, міста, населеного пункту" size="41" class="dark"></input>
+                    <input type="text" class="search city" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
                     <input type="image" src="images/search_icon.svg" alt="search" id="search"></input>
-                    <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
                 </form>
             </div>
-                <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
         </header>
         <article>
             <section>
-            <div>
-                <ul>
-                    <a href="#"><li>ПІВНІЧНА АМЕРИКА</li></a>
-                    <a href="#"><li>ПІВДЕННА АМЕРИКА</li></a>
-                    <a href="#"><li>ЄВРОПА</li></a>
-                    <a href="#"><li>АЗІЯ</li></a>
-                    <a href="#"><li>АФРИКА</li></a>
-                    <a href="#"><li>АВСТРАЛІЯ</li></a>
-                </ul>
-            </div>
+                <div>
+                    <ul>
+                        <a href="#"><li>ПІВНІЧНА АМЕРИКА</li></a>
+                        <a href="#"><li>ПІВДЕННА АМЕРИКА</li></a>
+                        <a href="#"><li>ЄВРОПА</li></a>
+                        <a href="#"><li>АЗІЯ</li></a>
+                        <a href="#"><li>АФРИКА</li></a>
+                        <a href="#"><li>АВСТРАЛІЯ</li></a>
+                    </ul>
+                </div>
             </section>
-        <aside>
-            <img src="images/world.svg" width="500p" height="400px"/>
-            <a href="world weather.html"><p>Всі інші країни</p></a>
-        </aside>
+            <aside>
+                <img src="images/world.svg" width="500p" height="400px"/>
+                <a href="world weather.html"><p>Всі інші країни</p></a>
+            </aside>
         </article>
         <footer>
             <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
