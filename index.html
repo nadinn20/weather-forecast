@@ -1,87 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
     <head>
-        <meta charset=UTF-8 />
+        <meta charset=UTF-8/>
         <title>Meteo</title>
-        <link href="css/weather.css" rel="stylesheet"/>
-        <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/main_page_style.css" rel="stylesheet">
     </head>
     <body>
-        <header id="main" class="flex-conteiner">
-            <div class="flex">
-                <div>
-                    <span class="meteo"><b>METEO</b></span>
-                </div>
-                <div>
-                    <a href="index.html" id="cloud"><img src="images/logo .png" id="logo" alt="logo"/></a>
-                </div>
-            </div>
-            <div class="flex">
-                <form class="search">
-                    <input type="text" class="city" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
-                    <input type="image" src="images/search_icon.svg" alt="search"></input>
-                </form>
-            </div>
-        </header>
         <article>
-            <section>
-                <div class="box">
-                    <a href="weather forecast.html" class="detail">Детальніше</a>
-                </div>
-                <div class="box">
-                    <a href="weather forecast.html" class="detail">Детальніше</a>
-                </div>
-                <div class="box">
-                    <a href="weather forecast.html" class="detail">Детальніше</a>
-                </div>
-            </section>
-            <section id="weather for week">
-                <p><h2 align="center"><span>Прогноз погоди на тиждень</span></h2></p>
-                    <ul id="week">
-                        <li>Понеділок</li>
-                        <li>Вівторок</li>
-                        <li>Середа</li>
-                        <li>Четвер</li>
-                        <li>П'ятниця</li>
-                        <li>Субота</li>
-                        <li>Неділя</li>
-                    </ul>
-            </section>
-            <section id="">
-                    <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
-                    <div class="city">
-                        <ul>
-                            <a href="Ukraine.html"><li>Київ</li></a>
-                            <a href="Ukraine.html"><li>Харків</li></a>
-                            <a href="Ukraine.html"><li>Запоріжжя</li></a>
-                            <a href="Ukraine.html"><li>Одеса</li></a>
-                        </ul>
-                    </div>
-                    <div class="city">
-                        <ul>
-                            <a href="Ukraine.html"><li>Херсон</li></a>
-                            <a href="Ukraine.html"><li>Суми</li></a>
-                            <a href="Ukraine.html"><li>Вінниця</li></a>
-                            <a href="Ukraine.html"><li>Полтава</li></a>
-                        </ul>
-                    </div>
-                    <div class="city">
-                        <ul>
-                            <a href="Ukraine.html"><li>Миколаїв</li></a>
-                            <a href="Ukraine.html"><li>Чернігів</li></a>
-                            <a href="Ukraine.html"><li>Львів</li></a>
-                            <a href="Ukraine.html"><li>Дніпропетровськ</li></a>
-                        </ul>
-                    </div>
-            </section>
-            <aside>
-                <img src="images/world.svg" width="500p" height="400px"/>
-                <a href="world weather.html"><p>Всі інші країни</p></a>
-            </aside>
+            <div id="cloud1" class="one">
+                <img class="object cloud1 move-right" src="images/logo .png" alt="cloud1" width="300px" />
+            </div>
+            <div id="sun">
+                <img src="images/the_sun.png" alt="sun" width="180px"/>
+            </div>
+            <div id="cloud2" class="two">
+                <img class="object cloud2 move-left" src="images/logo .png" alt="cloud2" width="300px"/>
+            </div>
+            <div id="meteo">
+                <a href="index.html"><p><h2>METEO</h2><p></a>
+            </div>
         </article>
-        <footer>
-                <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
-                <img src="images/twitter.png" width="25px" height="25px" class="social"/>
-        </footer>
     </body>
 </html>
