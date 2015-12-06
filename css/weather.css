@@ -1,6 +1,5 @@
 body{
-    background: #d1d1d1;
-    color: #3f3f3f;
+    background-image: url(../images/background.svg);
 }
 #main{
     margin:0;
@@ -54,6 +53,10 @@ form{
     vertical-align: middle;
    }
    input[type="image"] {
+    position:absolute;
+    top:6%;
+    margin-left: -23px;
+    margin-top: 17px;
     width: 19px;
     height: 19px;
     border: none;
