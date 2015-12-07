@@ -25,7 +25,13 @@ header{
     flex-wrap:wrap;
     justify-content:space-between;
 }
-
+.flex-box #ukraine li{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    width:250px;
+}
 .meteo{
     width:70px;
     height:20px;
@@ -44,7 +50,7 @@ form{
     min-height: 30px;
    }
    input[type="text"] {
-    font: 30px tahoma #6b6b6b;
+    font: 20px tahoma #6b6b6b;
     border:1px solid #a1a1a1;
     border-radius:3px;
     outline: none;
@@ -80,7 +86,7 @@ article{
 	font: 15px Kurale, serif;
 }
 li{
-    width:300px;
+    width:250px;
     margin: 20px 20px 20px 20px;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
@@ -104,5 +110,7 @@ footer{
     border: 1px solid #e67300;
 }
 .social{
-    margin: 5px;
+    display:flex;
+    flex-wrap:wrap;
+    margin:8px;
 }

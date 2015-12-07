@@ -39,18 +39,23 @@
             <section id="weather for week">
                 <p><h2 align="center"><span>Прогноз погоди на тиждень</span></h2></p>
                     <ul id="week" class="flex-container">
-                        <li>Понеділок</li>
-                        <li>Вівторок</li>
-                        <li>Середа</li>
-                        <li>Четвер</li>
-                        <li>П'ятниця</li>
-                        <li>Субота</li>
-                        <li>Неділя</li>
+                        <div>
+                            <li>Понеділок</li>
+                            <li>Вівторок</li>
+                            <li>Середа</li>
+                        </div>
+                        <div>
+                            <li>Четвер</li>
+                            <li>П'ятниця</li>
+                            <li>Субота</li>
+                            <li>Неділя</li>
+                        </div>
                     </ul>
             </section>
-            <section>
-                    <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
-                    <div class="flex-container">
+            <section id="ukraine">
+                <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
+                <div class="flex-box">   
+                    <div>
                         <ul>
                             <a href="Ukraine.html"><li>Київ</li></a>
                             <a href="Ukraine.html"><li>Харків</li></a>
@@ -58,7 +63,7 @@
                             <a href="Ukraine.html"><li>Одеса</li></a>
                         </ul>
                     </div>
-                    <div class="flex-container">
+                    <div>
                         <ul>
                             <a href="Ukraine.html"><li>Херсон</li></a>
                             <a href="Ukraine.html"><li>Суми</li></a>
@@ -66,7 +71,7 @@
                             <a href="Ukraine.html"><li>Полтава</li></a>
                         </ul>
                     </div>
-                    <div class="flex-container">
+                    <div >
                         <ul>
                             <a href="Ukraine.html"><li>Миколаїв</li></a>
                             <a href="Ukraine.html"><li>Чернігів</li></a>
@@ -74,15 +79,16 @@
                             <a href="Ukraine.html"><li>Дніпропетровськ</li></a>
                         </ul>
                     </div>
+                </div>
             </section>
             <aside>
                 <img src="images/world.svg" width="500p" height="400px"/>
                 <a href="world weather.html"><p>Всі інші країни</p></a>
             </aside>
         </article>
-        <footer>
-                <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
-                <img src="images/twitter.png" width="25px" height="25px" class="social"/>
+        <footer class="social">
+                <img src="images/facebook-logo.png" width="25px" height="25px"/>
+                <img src="images/twitter.png" width="25px" height="25px"/>
         </footer>
     </body>
 </html>
