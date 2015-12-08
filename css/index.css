@@ -17,7 +17,7 @@ body{
     left: 44%;
 }
 #cloud1:hover .move-right{
-    transform: translate(450px,0);
+    transform: translate(400px,0);
     -webkit-transform: translate(450px,0);
     -o-transform: translate(450px,0);
     -moz-transform: translate(450px,0);
@@ -37,14 +37,16 @@ body{
     position: absolute;
 }
 #cloud2:hover .move-left {
-    transform: translate(-450px,0);
+    transform: translate(-400px,0);
     -webkit-transform: translate(-450px,0);
     -o-transform: translate(-450px,0);
     -moz-transform: translate(-450px,0);
 }
 #meteo{
     width:100px;
-    padding: 55% 35%;
+    position:absolute;
+    top:70%;
+    left:45%;
     font: 23px tahoma, verdana, sans-serif;
 }
 a{

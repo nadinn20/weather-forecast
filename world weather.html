@@ -7,34 +7,38 @@
         <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header id="main" class="flex-conteiner">
-            <div class="flex">
+        <header id="main" class="flex-container">
+            <div>
                 <div>
                     <span class="meteo"><b>METEO</b></span>
                 </div>
                 <div>
-                    <a href="index.html" id="cloud"><img src="images/logo .png" id="logo" alt="logo"/></a>
+                    <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
                 </div>
             </div>
-            <div class="flex">
-                <form>
-                    <input type="text" class="search city" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
-                    <input type="image" src="images/search_icon.svg" alt="search" id="search"></input>
+            <div>
+                <form class="search">
+                    <input type="text" class="city" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
+                    <input type="image" src="images/search_icon.svg" alt="search"></input>
                 </form>
             </div>
         </header>
         <article>
             <section>
-                <div>
-                    <ul>
+                <ul class="flex-container">
+                    <div>
                         <a href="#"><li>ПІВНІЧНА АМЕРИКА</li></a>
                         <a href="#"><li>ПІВДЕННА АМЕРИКА</li></a>
+                    </div>
+                    <div>
                         <a href="#"><li>ЄВРОПА</li></a>
                         <a href="#"><li>АЗІЯ</li></a>
+                    </div>
+                    <div>
                         <a href="#"><li>АФРИКА</li></a>
                         <a href="#"><li>АВСТРАЛІЯ</li></a>
-                    </ul>
-                </div>
+                    </div>
+                </ul>
             </section>
             <aside>
                 <img src="images/world.svg" width="500p" height="400px"/>
@@ -42,8 +46,10 @@
             </aside>
         </article>
         <footer>
-            <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
-            <img src="images/twitter.png" width="25px" height="25px" class="social"/>
+            <div class="flexbox">
+                <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
+                <img src="images/twitter.png" width="25px" height="25px" class="social"/>
+            </div>
         </footer>
     </body>
 </html>

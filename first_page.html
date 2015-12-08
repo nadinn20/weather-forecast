@@ -5,7 +5,6 @@
         <title>Meteo</title>
         <link href="css/weather.css" rel="stylesheet"/>
         <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link href="css/flex_first_page.css" rel="stylesheet"/>
     </head>
     <body>
         <header id="main" class="flex-container">
@@ -14,12 +13,12 @@
                     <span class="meteo"><b>METEO</b></span>
                 </div>
                 <div>
-                    <a href="index.html" id="cloud"><img src="images/logo .png" id="logo" alt="logo"/></a>
+                    <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
                 </div>
             </div>
             <div>
                 <form class="search">
-                    <input type="text" class="city" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
+                    <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
                     <input type="image" src="images/search_icon.svg" alt="search"></input>
                 </form>
             </div>
@@ -27,18 +26,18 @@
         <article>
             <section class="flex-container">
                 <div>
-                    <a href="weather forecast.html" class="detail">Детальніше</a>
+                    <a href="weather forecast.html">Детальніше</a>
                 </div>
                 <div>
-                    <a href="weather forecast.html" class="detail">Детальніше</a>
+                    <a href="weather forecast.html">Детальніше</a>
                 </div>
                 <div>
-                    <a href="weather forecast.html" class="detail">Детальніше</a>
+                    <a href="weather forecast.html">Детальніше</a>
                 </div>
             </section>
-            <section id="weather for week">
+            <section>
                 <p><h2 align="center"><span>Прогноз погоди на тиждень</span></h2></p>
-                    <ul id="week" class="flex-container">
+                    <ul class="flex-container">
                         <div>
                             <li>Понеділок</li>
                             <li>Вівторок</li>
@@ -52,9 +51,9 @@
                         </div>
                     </ul>
             </section>
-            <section id="ukraine">
+            <section>
                 <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
-                <div class="flex-box">   
+                <div class="flex-container">   
                     <div>
                         <ul>
                             <a href="Ukraine.html"><li>Київ</li></a>
@@ -82,13 +81,15 @@
                 </div>
             </section>
             <aside>
-                <img src="images/world.svg" width="500p" height="400px"/>
+                <img src="images/world.svg" width="500px" height="400px"/>
                 <a href="world weather.html"><p>Всі інші країни</p></a>
             </aside>
         </article>
-        <footer class="social">
-                <img src="images/facebook-logo.png" width="25px" height="25px"/>
-                <img src="images/twitter.png" width="25px" height="25px"/>
+        <footer>
+            <div class="flexbox">
+                <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
+                <img src="images/twitter.png" width="25px" height="25px"class="social"/>
+            </div>
         </footer>
     </body>
 </html>

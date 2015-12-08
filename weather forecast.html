@@ -7,34 +7,42 @@
         <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <header id="main" class="flex-conteiner">
-            <div class="flex">
+        <header id="main" class="flex-container">
+            <div>
                 <div>
                     <span class="meteo"><b>METEO</b></span>
                 </div>
                 <div>
-                    <a href="index.html" id="cloud"><img src="images/logo .png" id="logo" alt="logo"/></a>
+                    <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
                 </div>
             </div>
-            <div class="flex">
-                <form>
-                    <input type="text" class="search city" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
-                    <input type="image" src="images/search_icon.svg" alt="search" id="search"></input>
+            <div>
+                <form class="search">
+                    <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
+                    <input type="image" src="images/search_icon.svg" alt="search"></input>
                 </form>
             </div>
         </header>
         <article>
             <section>
                 <h2 align="center">Погодинний прогноз погоди</h2>
-                    <ul>
-                        <li>2:00</li>
-                        <li>5:00</li>
-                        <li>8:00</li>
-                        <li>11:00</li>
-                        <li>14:00</li>
-                        <li>17:00</li>
-                        <li>20:00</li>
-                        <li>23:00</li>
+                    <ul class="flex-container">
+                        <div>
+                            <li>2:00</li>
+                            <li>5:00</li>
+                        </div>
+                        <div>
+                            <li>8:00</li>
+                            <li>11:00</li>
+                        </div>
+                        <div>
+                            <li>14:00</li>
+                            <li>17:00</li>
+                        </div>
+                        <div>
+                            <li>20:00</li>
+                            <li>23:00</li>
+                        </div>
                     </ul>
             </section>
             <aside>
@@ -43,8 +51,10 @@
             </aside>
         </article>
         <footer>
-            <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
-            <img src="images/twitter.png" width="25px" height="25px" class="social"/>
+            <div class="flexbox">
+                <img src="images/facebook-logo.png" width="25px" height="25px" class="social"/>
+                <img src="images/twitter.png" width="25px" height="25px"class="social"/>
+            </div>
         </footer>
     </body>
 </html>

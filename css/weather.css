@@ -15,8 +15,7 @@ header{
     min-height:100px;
     margin:0 auto;
     overflow: hidden;
-    background: #fc0;
-    box-shadow: 0 0 10px rgba(2,2,2,1.6);
+    box-shadow: 0 0 10px rgba(0,0,0,1.6);
     z-index: 1000;
    }
 .flex-container{
@@ -24,13 +23,6 @@ header{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
-}
-.flex-box #ukraine li{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    width:250px;
 }
 .meteo{
     width:70px;
@@ -50,13 +42,13 @@ form{
     min-height: 30px;
    }
    input[type="text"] {
-    font: 20px tahoma #6b6b6b;
     border:1px solid #a1a1a1;
     border-radius:3px;
     outline: none;
     -webkit-appearance: none;
-    width: 270px;
+    width: 285px;
     height:25px;
+    font:tahoma, #6b6b6b;
     vertical-align: middle;
     background: #bdbdbd;
    }
@@ -86,15 +78,19 @@ article{
 	font: 15px Kurale, serif;
 }
 li{
-    width:250px;
+    width:230px;
     margin: 20px 20px 20px 20px;
     border: 1px solid #d1d1d1;
     border-radius: 5px;
+    list-style-type:none;
     display:flex;
 }
 a{
     text-decoration: none;
     color:#3f3f3f;
+}
+h2{
+    color:#3f3f3f; 
 }
 aside{ 
     text-align: center;
@@ -109,8 +105,11 @@ footer{
     background: linear-gradient(to top, #ff972e,#ffb061);
     border: 1px solid #e67300;
 }
-.social{
+.flexbox{
     display:flex;
+    justify-content: flex-end                                                                                                                                                                                         ;
     flex-wrap:wrap;
-    margin:8px;
+}
+.social{
+    margin: 5px;
 }
