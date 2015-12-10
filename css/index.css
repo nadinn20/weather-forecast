@@ -44,9 +44,9 @@ body{
 }
 #meteo{
     width:100px;
-    position:absolute;
+    position: absolute;
     top:70%;
-    left:65%;
+    left:50%;
     font: 23px tahoma, verdana, sans-serif;
 }
 a{
