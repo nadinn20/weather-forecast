@@ -18,41 +18,28 @@
             </div>
             <div>
                 <form class="search">
-                    <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
-                    <input type="image" src="images/search_icon.svg" alt="search"></input>
+                    <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42" alt="cityName" id="inputCityName"></input>
+                    <input type="image" src="images/search_icon.svg" alt="search" id="btnGetWeather"></input>
                 </form>
             </div>
         </header>
         <article>
+            <p><span id="location"></span></p>
             <section class="flex-container">
-                <div>
-                    <p>Сьогодні</p>
-                    <a href="weather forecast.html">Детальніше</a>
-                </div>
-                <div>
-                    <p>Завтра</p>
-                    <a href="weather forecast.html">Детальніше</a>
-                </div>
-                <div>
-                    <p>Сьогодні</p>
-                    <a href="weather forecast.html">Детальніше</a>
-                </div>
-            </section>
-            <section>
-                <p><h2 align="center"><span>Прогноз погоди на тиждень</span></h2></p>
-                    <ul class="flex-container">
-                        <div>
-                            <li>Понеділок</li>
-                            <li>Вівторок</li>
-                            <li>Середа</li>
-                        </div>
-                        <div>
-                            <li>Четвер</li>
-                            <li>П'ятниця</li>
-                            <li>Субота</li>
-                            <li>Неділя</li>
-                        </div>
-                    </ul>
+                <table id="weatherTable">
+                    <tr>
+                        <th>Дата</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </table>
             </section>
             <section>
                 <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
@@ -87,8 +74,13 @@
         <footer>
             <div class="flexbox">
                 <img src="images/facebook-logo.png" alt="fb" width="25px" height="25px" class="social"/>
-                <img src="images/twitter.png" alt="twitter" width="25px" height="25px"class="social"/>
+                <img src="images/twitter.png" alt="twitter" width="25px" height="25px" class="social"/>
             </div>
         </footer>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script type="text/javascript" src="js/weather.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/WeatherByCity.js"></script>
     </body>
 </html>

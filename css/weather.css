@@ -116,3 +116,18 @@ footer{
 #weather_ukraine{
     font:12px Kurale,serif;
 }
+#snowflake{
+    max-width:200px;
+    min-width:100px;
+    margin: 10px;
+}
+.flex-box{
+    display:flex;
+    justify-content:flex-start;
+    
+}
+#detail li{
+    width="250px"
+    display:flex;
+    justify-content:space-between;
+}
