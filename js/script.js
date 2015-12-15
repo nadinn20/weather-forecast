@@ -1,49 +1,15 @@
-$(function(){
-    $('#btnGetWeather').click(function () {
-        getWeatherByCity('ua', dataReceived, showError, $('#inputCityName').val());
-    });
-    $('#inputCityName').keypress(function(e) {
-        var ENTER_KEY_CODE = 13;
-        if ( e.which === ENTER_KEY_CODE ) 
-        {
-            $('#btnGetWeather').trigger('click');
-            return false;
-        }
-    });     
     
-    getWeatherData('ua', dataReceived, showError);
-    
-    function dataReceived(data) {
-        var offset = (new Date()).getTimezoneOffset()*60*1000; 
-        var city = data.city.name;
-        var country = data.city.country;
-        $("#weatherTable tr:not(:first)").remove();
-        
-        $.each(data.list, function(){
-            var localTime = new Date(this.dt*1000 - offset); // Convert time from UTC to local
-            addWeather(
-                this.weather[0].icon,
-                moment(localTime).calendar(),	// Use moment.js for date format
-                this.weather[0].description,
-                Math.round(this.temp.day) + '&deg;C'
-            );
-        });
-        $('#location').html(city + ', <b>' + country + '</b>'); // Adding location
+ $(function() {
+    $.getJSON('http://api.openweathermap.org/data/2.5/forecast/daily?q=istanbul'+
+    '&units=metric&cnt=7&APPID=e522dd5a533738e9c18cde03828c57b1',
+    function(data) {
+        data.list[0].temp.day;
+        $('#tempToday').html(data.list[0].temp.day);
+        $('#tempTomorrow').html(data.list[1].temp.day);
+        $('#tempAfterTommorow').html(data.list[2].temp.day);
+        $('#pressureToday').html(data.list[0].pressure);
+        $('#pressureTomorrow').html(data.list[1].pressure);
+        $('#pressureAfterTommorow').html(data.list[2].pressure);
     }
-
-    function addWeather(icon, day, condition, temp){
-        var markup = '<tr>'+
-                '<th>' + day + '</th>' + '</tr>' + '<tr>' +
-                '<th>' + '<img src="images/icons/'+ 
-                  icon
-                  +'.png" />' + '</th>' +'</tr>' + '<tr>' + 
-                '<th>' + temp + '</th>' + '</tr>' + '<tr>' +
-                '<th>' + condition + '</th>'
-            + '</tr>';
-        weatherTable.insertRow(-1).innerHTML = markup; // Додаємо рядок до таблиці
-    }
-
-    function showError(msg){
-        $('#error').html('Сталася помилка: ' + msg);
-    }
+  );
 });

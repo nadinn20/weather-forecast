@@ -5,6 +5,7 @@
         <title>Meteo</title>
         <link href="css/weather.css" rel="stylesheet"/>
         <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <header id="main" class="flex-container">
@@ -25,21 +26,12 @@
         </header>
         <article>
             <p><span id="location"></span></p>
-            <section class="flex-container">
-                <table id="weatherTable">
-                    <tr>
-                        <th>Дата</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                    </tr>
-                </table>
+            <section>
+                <div id="weatherDiv" class="flex-container">
+                    <div id="tempToday" class="weather">Сьогодні</div>
+                    <div id="tempTomorrow" class="weather">Завтра</div>
+                    <div id="tempAfterTommorow" class="weather">Післязавтра</div>
+                </div>
             </section>
             <section>
                 <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
@@ -77,8 +69,8 @@
                 <img src="images/twitter.png" alt="twitter" width="25px" height="25px" class="social"/>
             </div>
         </footer>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="js/moment-locales.js"></script>
         <script type="text/javascript" src="js/weather.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/WeatherByCity.js"></script>

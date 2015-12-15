@@ -105,6 +105,12 @@ footer{
     background: linear-gradient(to top, #ff972e,#ffb061);
     border: 1px solid #e67300;
 }
+.weather{
+    width:220px;
+    justify-content:space-between;
+    display:flex;
+    flex-direction:row;
+}
 .flexbox{
     display:flex;
     justify-content: flex-end                                                                                                                                                                                         ;
@@ -116,18 +122,13 @@ footer{
 #weather_ukraine{
     font:12px Kurale,serif;
 }
-#snowflake{
-    max-width:200px;
-    min-width:100px;
-    margin: 10px;
-}
 .flex-box{
     display:flex;
     justify-content:flex-start;
     
 }
 #detail li{
-    width="250px"
+    width:"250px";
     display:flex;
     justify-content:space-between;
 }
