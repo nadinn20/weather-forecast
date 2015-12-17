@@ -24,6 +24,12 @@ header{
     flex-wrap:wrap;
     justify-content:space-between;
 }
+.weather{
+    margin:18px;
+    width:220px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
 .meteo{
     width:70px;
     height:20px;
@@ -104,12 +110,6 @@ footer{
     background: #ff972e;
     background: linear-gradient(to top, #ff972e,#ffb061);
     border: 1px solid #e67300;
-}
-.weather{
-    width:220px;
-    justify-content:space-between;
-    display:flex;
-    flex-direction:row;
 }
 .flexbox{
     display:flex;

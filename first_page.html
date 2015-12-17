@@ -18,27 +18,44 @@
                 </div>
             </div>
             <div>
-                <form class="search">
+                <form class="search" id="formCity">
                     <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42" alt="cityName" id="inputCityName"></input>
-                    <input type="image" src="images/search_icon.svg" alt="search" id="btnGetWeather"></input>
+                    <input type="image" src="images/search_icon.svg" alt="search" id="btnGetWeather" value="Get Weather"></input>
                 </form>
             </div>
         </header>
         <article>
-            <p><span id="location"></span></p>
             <section>
-                <div id="weatherDiv" class="flex-container">
-                    <div id="tempToday" class="weather">Сьогодні</div>
-                    <div id="tempTomorrow" class="weather">Завтра</div>
-                    <div id="tempAfterTommorow" class="weather">Післязавтра</div>
+                <h2 align="center"><span id="location"></span></h2>
+                <div class="flex-container">
+                    <div class="weather">
+                        <p>Дата:<span class="localTime"></span></p>
+                        <p>Tемпература: <span id="tempToday"></span>&deg;C</p>
+                        <p>Тиск: <span id="pressureToday"></span></p>
+                        <p>Вологість: <span id="humidityToday"></span>%</p>
+                        <p id="icon1"></p>
+                    </div>
+                    <div class="weather">
+                        <p>Дата:<span class="localTime"></span></p>
+                        <p>Tемпература: <span id="tempTomorrow"></span>&deg;C</p>
+                        <p>Тиск: <span id="pressureTomorrow"></span></p>
+                        <p>Вологість: <span id="humidityTomorrow"></span>%</p>
+                    </div>
+                    <div class="weather">
+                        <p>Дата:<span class="localTime"></span></p>
+                        <p>Tемпература: <span id="tempAfterTomorrow"></span>&deg;C</p>
+                        <p>Тиск: <span id="pressureAfterTomorrow"></span></p>
+                        <p>Вологість: <span id="humidityAfterTomorrow"></span>%</p>
+                    </div>
                 </div>
+                <p id ="error"></p>
             </section>
             <section>
                 <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
                 <div class="flex-container" id="weather_ukraine">   
                     <div>
                         <ul>
-                            <a href="Ukraine.html"><li>Київ</li></a>
+                            <a href="Ukraine.html"><li id="kyiv">Київ</li></a>
                             <a href="Ukraine.html"><li>Харків</li></a>
                             <a href="Ukraine.html"><li>Запоріжжя</li></a>
                             <a href="Ukraine.html"><li>Одеса</li></a>
@@ -70,7 +87,7 @@
             </div>
         </footer>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="js/moment-locales.js"></script>
+        <script type="text/javascript" src="js/moment-with-locales.js"></script>
         <script type="text/javascript" src="js/weather.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/WeatherByCity.js"></script>
