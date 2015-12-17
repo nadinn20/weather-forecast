@@ -1,11 +1,21 @@
  function dataReceived(data) {
-		// Get the offset from UTC (turn the offset minutes into ms)
-		var offset = (new Date()).getTimezoneOffset()*60*1000;
+  	      var locale = 'ua',
+         weatherDiv = $('.weather'),
+		       location = $('p #location');
+		       var offset = (new Date()).getTimezoneOffset()*60*1000;
 		$.getJSON(localTime), function(response){
 		    console.log(response)
 			$('#localTime').html(response.newDate(this.dt*1000 - offset));
 		};
 }
+
+	getWeatherData(locale, dataReceived, showError);
+
+	function dataReceived(data) {
+		// Get the offset from UTC (turn the offset minutes into ms)
+		var offset = (new Date()).getTimezoneOffset()*60*1000;
+		var city = data.city.name;
+		var country = data.city.country;
 
  $(function() {
 navigator.geolocation.getCurrentPosition(locSuccess, locError);
