@@ -24,47 +24,31 @@
             </div>
         </header>
         <article>
-            <section>
-                <h2 text-align="center" id="location"></h2>
-                <div class="flex-container">
-                    <div class="weather">
-                        <p>Дата:<span class="localTime"></span></p>
-                        <p>Tемпература: <b><span id="temp"></span>&deg;C</b></p>
-                        <p>Tемпература: <b><span id="temp_min"></span>&deg;C</b></p>
-                        <p>Tемпература: <b><span id="temp_max"></span>&deg;C</b></p>
-                        <p>Тиск: <b><span id="pressure"></span>мм/рт/ст</b></p>
-                        <p>Вологість: <b><span id="humidity"></span>%</b></p>
-                        <p>Швидкiсть вітру: <b><span id="windSpeed"></span>м/с</b></p>
-                        <div id="icon"></div>
-                    </div>
-                    
+            <section id="weather" class="flex-container">
+                <div id="icon"></div>
+                <div class="todayweather">
+                    <h1  id="location"></h1>
+                    <p><b><span id="localTime"></span></b></p>
                 </div>
+                <div id="image">
+                    <img src="images/thermometer.svg"  alt="term" width="40px"height="40p"/>
+                </div>
+                <div id="mainTemperature">
+                    <p>Поточна <b><span id="temp"></span>&deg;C</b></p>
+                    <p>Мінімальна: <b><span id="temp_min"></span>&deg;C</b></p>
+                    <p>Максимальна: <b><span id="temp_max"></span>&deg;C</b></p>
+                </div>
+                    <p><img src="images/compass93.svg" alt="pressure" width="40px"height="40p" /><b><span id="pressure"></span>мм/рт/ст</b></p>
+                    <p><img src="images/water16.svg" alt="water" width="40px"height="40p" /><b><span id="humidity"></span>%</b></p>
+                    <p><img src="images/windy8.svg" alt="windy" width="40px"height="40p" /><b><span id="windSpeed"></span>м/с</b></p>
+                    <p><img src="images/clouds17.svg" alt="clouds" width="40px"height="40p" /><b><span id="clouds"></span>%</b></p>
                 <p id ="error"></p>
             </section>
             <section>
-                <a href="Ukraine.html"><h2 align="center">Погода в Україні</h2></a>
-                <div class="flex-container" id="weather_ukraine">   
-                    <div>
-                        <ul>
-                            <a href="Ukraine.html"><li id="tempKiev">Київ</li></a>
-                            <a href="Ukraine.html"><li>Харків</li></a>
-                            <a href="Ukraine.html"><li>Запоріжжя</li></a>
-                            <a href="Ukraine.html"><li>Одеса</li></a>
-                            <a href="Ukraine.html"><li>Херсон</li></a>
-                            <a href="Ukraine.html"><li>Суми</li></a>
-                        </ul>
-                    </div>
-                    <div >
-                        <ul>
-                            <a href="Ukraine.html"><li>Вінниця</li></a>
-                            <a href="Ukraine.html"><li>Полтава</li></a>
-                            <a href="Ukraine.html"><li>Миколаїв</li></a>
-                            <a href="Ukraine.html"><li>Чернігів</li></a>
-                            <a href="Ukraine.html"><li>Львів</li></a>
-                            <a href="Ukraine.html"><li>Дніпропетровськ</li></a>
-                        </ul>
-                    </div>
-                </div>
+                <a href="Ukraine.html"><h2 id="detail">Погода на тиждень</h2></a>
+                <table>
+                    <tr><th>Дата</th><th>температура</th><th>Тиск</th><th>хмарність</th><th>Вологість</th><tr>
+                </table>
             </section>
             <aside>
                 <img src="images/world.svg" width="500px" height="400px"/>
@@ -79,8 +63,7 @@
         </footer>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/moment-with-locales.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/WeatherByCity.js"></script>
-        <script type="text/javascript" src="js/weather_in_ukraine.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>

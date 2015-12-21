@@ -24,10 +24,10 @@ body{
 }
 .object {
     position: absolute;
-    transition: all 6s ease-in-out;
-    -webkit-transition: all 6s ease-in-out;
-    -moz-transition: all 6s ease-in-out;
-    -o-transition: all 6s ease-in-out;
+    transition: all 5s ease-in-out;
+    -webkit-transition: all 5s ease-in-out;
+    -moz-transition: all 5s ease-in-out;
+    -o-transition: all 5s ease-in-out;
 }
 .cloud2{
     top:50%;
