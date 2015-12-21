@@ -23,6 +23,7 @@ header{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-between;
+    padding:15px;
 }
 .meteo{
     width:70px;
@@ -31,11 +32,8 @@ header{
     color: #3f3f3f;
     font: 20px tahoma, verdana, sans-serif;
 }
-form{
-    flex:1 auto;
-    width:400px;
-    height:50px;
-    padding:25px 30px;
+#form{
+    padding:25px;
 }
 .search {
     width: 300px;
@@ -54,8 +52,8 @@ form{
    }
    input[type="image"] {
     position:absolute;
-    margin-left: -23px;
-    margin-top: 4px;
+    margin-left: 265px;
+    margin-top: -24px;
     width: 19px;
     height: 19px;
     border: none;
@@ -84,20 +82,22 @@ article{
     padding:0;
     
 }
-#detail{
-    font:10px;
-    justify-content: flex-end;
-}
 .todayweather{
-    width: 800px;
+    margin-top:66px;
+    width: 350px;
     height:200px;
-    text-align:center;
     font:30px Tahoma, Verdana, sans-serif;
     color:#3f3f3f; 
 }
 #weather{
     color:#3f3f3f; 
     
+}
+.forecastDiv{
+    border:1px;
+    color:#3f3f3f;
+    width:165px;
+    margin:10px;
 }
 li{
     width:230px;
@@ -112,7 +112,8 @@ a{
     color:#3f3f3f;
 }
 h2{
-    color:#3f3f3f; 
+    color:#3f3f3f;
+    text-align:center;
 }
 #image{
     width:50px;

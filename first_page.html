@@ -16,22 +16,21 @@
                     <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
                 </div>
             </div>
-            <div>
-                <form class="search" id="formCity">
+            <div id="form">
                     <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42" alt="cityName" id="inputCityName"></input>
                     <input type="image" src="images/search_icon.svg" alt="search" id="btnGetWeather" value="Get Weather"></input>
-                </form>
             </div>
         </header>
         <article>
             <section id="weather" class="flex-container">
-                <div id="icon"></div>
+                <div id="icon">
+                </div>
                 <div class="todayweather">
                     <h1  id="location"></h1>
                     <p><b><span id="localTime"></span></b></p>
                 </div>
                 <div id="image">
-                    <img src="images/thermometer.svg"  alt="term" width="40px"height="40p"/>
+                    <img src="images/thermometer.svg"  alt="term" width="40px" height="40p"/>
                 </div>
                 <div id="mainTemperature">
                     <p>Поточна <b><span id="temp"></span>&deg;C</b></p>
@@ -44,11 +43,50 @@
                     <p><img src="images/clouds17.svg" alt="clouds" width="40px"height="40p" /><b><span id="clouds"></span>%</b></p>
                 <p id ="error"></p>
             </section>
-            <section>
-                <a href="Ukraine.html"><h2 id="detail">Погода на тиждень</h2></a>
-                <table>
-                    <tr><th>Дата</th><th>температура</th><th>Тиск</th><th>хмарність</th><th>Вологість</th><tr>
-                </table>
+            <h2>Погода на тиждень</h2>
+            <section  class="flex-container">
+                <div class="forecastDiv">
+                    <p><span id="icon1"></span></p>
+                    <p><b><span id="localTime1"></span></b></p>
+                    <p><b><span id="temp1"></span>&deg;C</b></p>
+                    <p><b><span id="pressure1"></span>мм/рт/ст</b></p>
+                </div>
+                <div class="forecastDiv">
+                    <p><span id="icon2"></span></p>
+                    <p><b><span id="localTime2"></span></b></p>
+                    <p><b><span id="temp2"></span>&deg;C</b></p>
+                    <p><b><span id="pressure2"></span>мм/рт/ст</b></p>
+                </div>
+                <div class="forecastDiv">
+                    <p><span id="icon3"></span></p>
+                    <p><b><span id="localTime3"></span></b></p>
+                    <p><b><span id="temp3"></span>&deg;C</b></p>
+                    <p><b><span id="pressure3"></span>мм/рт/ст</b></b></p>
+                </div>
+                <div class="forecastDiv">
+                    <p><span id="icon4"></span></p>
+                    <p><b><span id="localTime4"></span></b></p>
+                    <p><b><span id="temp4"></span>&deg;C</b></p>
+                    <p><b><span id="pressure4"></span>мм/рт/ст</b></p>
+                </div>
+                <div class="forecastDiv">
+                    <p><span id="icon5"></span></p>
+                    <p><b><span id="localTime5"></span></b></p>
+                    <p><b><span id="temp5"></span>&deg;C</b></p>
+                    <p><b><span id="pressure5"></span>мм/рт/ст</b></p>
+                </div>
+                <div class="forecastDiv">
+                    <p><span id="icon6"></span></p>
+                    <p><b><span id="localTime6"></span></b></p>
+                    <p><b><span id="temp6"></span>&deg;C</b></p>
+                    <p><b><span id="pressure6"></span>мм/рт/ст</b></p>
+                </div>
+                <div class="forecastDiv">
+                    <p><span id="icon7"></span></p>
+                    <p><b><span id="localTime7"></span></b></p>
+                    <p><b><span id="temp7"></span>&deg;C</b></p>
+                    <p><b><span id="pressure7"></span>мм/рт/ст</b></p>
+                </div>
             </section>
             <aside>
                 <img src="images/world.svg" width="500px" height="400px"/>
@@ -63,7 +101,15 @@
         </footer>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/moment-with-locales.js"></script>
-        <script type="text/javascript" src="js/WeatherByCity.js"></script>
+        <script>
+            $( document ).ready(function() {
+                console.log( "document loaded" );
+                moment.locale('uk');
+                var weather = new Weather();
+                weather.setUpGeolocation();
+                weather.startSearch();
+            });
+        </script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
