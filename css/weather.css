@@ -52,8 +52,8 @@ header{
    }
    input[type="image"] {
     position:absolute;
-    margin-left: 265px;
-    margin-top: -24px;
+    margin-left:-22px;
+    margin-top:4px;
     width: 19px;
     height: 19px;
     border: none;
@@ -91,13 +91,28 @@ article{
 }
 #weather{
     color:#3f3f3f; 
-    
 }
 .forecastDiv{
-    border:1px;
-    color:#3f3f3f;
-    width:165px;
-    margin:10px;
+    width:200px;
+    border-top:1px solid #d1d1d1;
+    border-bottom:1px solid #d1d1d1;
+    border-radius:5px;
+    text-align:center;
+    padding-left:20px;
+}
+p{
+   width:130px;
+}
+.images{
+    margin:0px 15px;
+    width:70px;
+    border-radius:8px;
+    border-top:1px solid #d1d1d1;
+    border-bottom:1px solid #d1d1d1;
+}
+.divIcon{
+    width:22px;
+    height:22px;
 }
 li{
     width:230px;
@@ -114,13 +129,16 @@ a{
 h2{
     color:#3f3f3f;
     text-align:center;
+    margin:40px;
 }
 #image{
     width:50px;
-    padding:0;
+}
+.localTime{
+    text-align:center;
 }
 #mainTemperature{
-    width:200px;
+    width:160px;
 }
 aside{ 
     text-align: center;

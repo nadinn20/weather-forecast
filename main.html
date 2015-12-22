@@ -23,8 +23,7 @@
         </header>
         <article>
             <section id="weather" class="flex-container">
-                <div id="icon">
-                </div>
+                <div id="icon"></div></div>
                 <div class="todayweather">
                     <h1  id="location"></h1>
                     <p><b><span id="localTime"></span></b></p>
@@ -38,59 +37,81 @@
                     <p>Максимальна: <b><span id="temp_max"></span>&deg;C</b></p>
                 </div>
                     <p><img src="images/compass93.svg" alt="pressure" width="40px"height="40p" /><b><span id="pressure"></span>мм/рт/ст</b></p>
-                    <p><img src="images/water16.svg" alt="water" width="40px"height="40p" /><b><span id="humidity"></span>%</b></p>
-                    <p><img src="images/windy8.svg" alt="windy" width="40px"height="40p" /><b><span id="windSpeed"></span>м/с</b></p>
-                    <p><img src="images/clouds17.svg" alt="clouds" width="40px"height="40p" /><b><span id="clouds"></span>%</b></p>
+                    <p><img src="images/water16.svg" alt="water" width="40px"height="40px" /><b><span id="humidity"></span>%</b></p>
+                    <p><img src="images/windy8.svg" alt="windy" width="40px"height="40px" /><b><span id="windSpeed"></span>м/с</b></p>
+                    <p><img src="images/clouds17.svg" alt="clouds" width="40px"height="40px" /><b><span id="clouds"></span>%</b></p>
                 <p id ="error"></p>
             </section>
             <h2>Погода на тиждень</h2>
             <section  class="flex-container">
-                <div class="forecastDiv">
-                    <p><span id="icon1"></span></p>
-                    <p><b><span id="localTime1"></span></b></p>
-                    <p><b><span id="temp1"></span>&deg;C</b></p>
-                    <p><b><span id="pressure1"></span>мм/рт/ст</b></p>
+                <div class="images">
+                    <p><b><span>Дата:</span></b></p>
+                    <img src="images/thermometer.svg"  alt="term" class="divIcon"/>
+                    <p><img src="images/compass93.svg" alt="pressure" class="divIcon" /></p>
+                    <p><img src="images/water16.svg" alt="water" class="divIcon" /></p>
                 </div>
                 <div class="forecastDiv">
-                    <p><span id="icon2"></span></p>
+                    <p><b><span id="localTime1" class="localTime"></span></b></p>
+                    <p><b><span id="temp1"></span>&deg;C</b></p>
+                    <p><b><span id="pressure1"></span>мм/рт/ст</b></p>
+                    <p><b><span id="humidity1"></span>%</b></p>
+                </div>
+                <div class="forecastDiv">
                     <p><b><span id="localTime2"></span></b></p>
                     <p><b><span id="temp2"></span>&deg;C</b></p>
                     <p><b><span id="pressure2"></span>мм/рт/ст</b></p>
+                    <p><b><span id="humidity2"></span>%</b></p>
                 </div>
                 <div class="forecastDiv">
-                    <p><span id="icon3"></span></p>
                     <p><b><span id="localTime3"></span></b></p>
                     <p><b><span id="temp3"></span>&deg;C</b></p>
                     <p><b><span id="pressure3"></span>мм/рт/ст</b></b></p>
+                    <p><b><span id="humidity3"></span>%</b></p>
+                </div>
+                <div class="images">
+                    <p><b><span>Дата:</span></b></p>
+                    <p><img src="images/thermometer.svg"  alt="term" class="divIcon"/></p>
+                    <p><img src="images/compass93.svg" alt="pressure" class="divIcon"/></p>
+                    <p><img src="images/water16.svg" alt="water" class="divIcon"/></p>
                 </div>
                 <div class="forecastDiv">
-                    <p><span id="icon4"></span></p>
                     <p><b><span id="localTime4"></span></b></p>
                     <p><b><span id="temp4"></span>&deg;C</b></p>
                     <p><b><span id="pressure4"></span>мм/рт/ст</b></p>
+                    <p><b><span id="humidity4"></span>%</b></p>
                 </div>
                 <div class="forecastDiv">
-                    <p><span id="icon5"></span></p>
                     <p><b><span id="localTime5"></span></b></p>
                     <p><b><span id="temp5"></span>&deg;C</b></p>
                     <p><b><span id="pressure5"></span>мм/рт/ст</b></p>
+                    <p><b><span id="humidity5"></span>%</b></p>
                 </div>
                 <div class="forecastDiv">
-                    <p><span id="icon6"></span></p>
                     <p><b><span id="localTime6"></span></b></p>
                     <p><b><span id="temp6"></span>&deg;C</b></p>
                     <p><b><span id="pressure6"></span>мм/рт/ст</b></p>
+                    <p><b><span id="humidity6"></span>%</b></p>
+                </div>
+                <div class="images">
+                    <p><b><span>Дата:</span></b></p>
+                    <p><img src="images/thermometer.svg"  alt="term" class="divIcon"/></p>
+                    <p><img src="images/compass93.svg" alt="pressure" class="divIcon"/></p>
+                    <p><img src="images/water16.svg" alt="water" class="divIcon" /></p>
                 </div>
                 <div class="forecastDiv">
-                    <p><span id="icon7"></span></p>
                     <p><b><span id="localTime7"></span></b></p>
                     <p><b><span id="temp7"></span>&deg;C</b></p>
                     <p><b><span id="pressure7"></span>мм/рт/ст</b></p>
+                    <p><b><span id="humidity7"></span>%</b></p>
+                </div>
+                <div class="forecastDiv">
+                </div>
+                <div class="forecastDiv">
                 </div>
             </section>
             <aside>
                 <img src="images/world.svg" width="500px" height="400px"/>
-                <a href="world weather.html"><p>Всі інші країни</p></a>
+                <a href="ukraine.html"><p>Погода в Україні</p></a>
             </aside>
         </article>
         <footer>
@@ -101,15 +122,6 @@
         </footer>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/moment-with-locales.js"></script>
-        <script>
-            $( document ).ready(function() {
-                console.log( "document loaded" );
-                moment.locale('uk');
-                var weather = new Weather();
-                weather.setUpGeolocation();
-                weather.startSearch();
-            });
-        </script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

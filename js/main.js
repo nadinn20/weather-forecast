@@ -1,3 +1,10 @@
+$( document ).ready(function() {
+                console.log( "document loaded" );
+                moment.locale('uk');
+                var weather = new Weather();
+                weather.setUpGeolocation();
+                weather.startSearch();
+            });
 function Weather() {
 
     this.setUpGeolocation = function() {
@@ -47,19 +54,19 @@ function Weather() {
 
     function getForecastByPosUrl(position) {
         return 'http://api.openweathermap.org/data/2.5/forecast/daily?lat='+position.coords.latitude+
-            '&lon='+position.coords.longitude+'&cnt=7&APPID=e522dd5a533738e9c18cde03828c57b1&callback=?';
+            '&lon='+position.coords.longitude+'&units=metric&cnt=7&APPID=e522dd5a533738e9c18cde03828c57b1&callback=?';
     }
     //---------------------------------------------/
 
      // Weather and Forecast by City ---------------/
     function getWeatherByCityUrl(cityName) {
         return 'http://api.openweathermap.org/data/2.5/weather?q='+ cityName +
-            '&type=like&APPID=e522dd5a533738e9c18cde03828c57b1&callback=?';
+            '&type=like&units=metric&APPID=e522dd5a533738e9c18cde03828c57b1&callback=?';
     }
 
     function getForecastByCityUrl(cityName) {
          return 'http://api.openweathermap.org/data/2.5/forecast/daily?q='+ cityName +
-             '&units=metric&cnt=3&APPID=e522dd5a533738e9c18cde03828c57b1&callback=?';
+             '&units=metric&cnt=7&APPID=e522dd5a533738e9c18cde03828c57b1&callback=?';
     }
     //------------------------------------------/
 
@@ -84,33 +91,40 @@ function Weather() {
         var offset = (new Date()).getTimezoneOffset()*60*1000;
         
         forecastList.forEach(function(forecast) {
-        $('localTime1').html(moment(new Date(data.list[0].dt*1000-offset)).calendar());
+        $('#localTime1').html(moment(new Date(data.list[0].dt*1000-offset)).calendar());
         $('#temp1').html(Math.round(data.list[0].temp.day));
         $('#pressure1').html(Math.round(data.list[0].pressure*0.75006375541921));
+        $('#humidity1').html(data.list[0].humidity);
         
-        $('localTime2').html(moment(new Date(data.list[1].dt*1000-offset)).calendar());
+        $('#localTime2').html(moment(new Date(data.list[1].dt*1000-offset)).calendar());
         $('#temp2').html(Math.round(data.list[1].temp.day));
         $('#pressure2').html(Math.round(data.list[1].pressure*0.75006375541921));
+        $('#humidity2').html(data.list[1].humidity);
         
-        $('localTime3').html(moment(new Date(data.list[2].dt*1000-offset)).calendar());
+        $('#localTime3').html(moment(new Date(data.list[2].dt*1000-offset)).calendar());
         $('#temp3').html(Math.round(data.list[2].temp.day));
         $('#pressure3').html(Math.round(data.list[2].pressure*0.75006375541921));
+        $('#humidity3').html(data.list[2].humidity);
         
-        $('localTime4').html(moment(new Date(data.list[3].dt*1000-offset)).calendar());
+        $('#localTime4').html(moment(new Date(data.list[3].dt*1000-offset)).calendar());
         $('#temp4').html(Math.round(data.list[3].temp.day));
         $('#pressure4').html(Math.round(data.list[3].pressure*0.75006375541921));
+        $('#humidity4').html(data.list[3].humidity);
         
-        $('localTime5').html(moment(new Date(data.list[4].dt*1000-offset)).calendar());
+        $('#localTime5').html(moment(new Date(data.list[4].dt*1000-offset)).calendar());
         $('#temp5').html(Math.round(data.list[4].temp.day));
         $('#pressure5').html(Math.round(data.list[4].pressure*0.75006375541921));
+        $('#humidity5').html(data.list[4].humidity);
         
-        $('localTime6').html(moment(new Date(data.list[5].dt*1000-offset)).calendar());
+        $('#localTime6').html(moment(new Date(data.list[5].dt*1000-offset)).calendar());
         $('#temp6').html(Math.round(data.list[5].temp.day));
         $('#pressure6').html(Math.round(data.list[5].pressure*0.75006375541921));
+        $('#humidity6').html(data.list[5].humidity);
         
-        $('localTime7').html(moment(new Date(data.list[6].dt*1000-offset)).calendar());
+        $('#localTime7').html(moment(new Date(data.list[6].dt*1000-offset)).calendar());
         $('#temp7').html(Math.round(data.list[6].temp.day));
         $('#pressure7').html(Math.round(data.list[6].pressure*0.75006375541921));
+        $('#humidity7').html(data.list[6].humidity);
         });
     }
 

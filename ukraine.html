@@ -4,7 +4,7 @@
         <meta charset=UTF-8 />
         <title>Meteo</title>
         <link href="css/weather.css" rel="stylesheet"/>
-        <link href='https://fonts.googleapis.com/css?family=Kurale&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     <body>
         <header id="main" class="flex-container">
@@ -16,11 +16,9 @@
                     <a href="index.html"><img src="images/logo .png" id="logo" alt="logo"/></a>
                 </div>
             </div>
-            <div>
-                <form class="search">
-                    <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42"></input>
-                    <input type="image" src="images/search_icon.svg" alt="search"></input>
-                </form>
+            <div id="form">
+                <input type="text" placeholder="Пошук країни, міста, населеного пункту" size="42" alt="cityName" id="inputCityName"></input>
+                <input type="image" src="images/search_icon.svg" alt="search" id="btnGetWeather" value="Get Weather"></input>
             </div>
         </header>
         <article >
@@ -95,8 +93,6 @@
         </footer>
         <script type="text/javascript" src="//code.jquery.com/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="js/moment-with-locales.js"></script>
-        <script type="text/javascript" src="js/WeatherByCity.js"></script>
-        <script type="text/javascript" src="js/weather_in_ukraine.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
